@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コマ組メーカー</title>
+</head>
+<body>
+    <h1>コマ組メーカー</h1>
+    <hi>組み直す場合は必ずリロードしてからにしてください</hi><br>
+    <hi>リロードすると名前入力は初めからになるので気を付けてください</hi>
+    <textarea id="namesInput" rows="10" cols="30" placeholder="名前を改行で入力してください"></textarea><br>
+    <label for="pairCount">ペアの数（最大台数を指定）:</label>
+    <input type="number" id="pairCount" min="1" max="14" value="1"><br>
+    <label for="generationCount">生成回数:</label>
+    <input type="number" id="generationCount" min="1" max="6" value="1"><br>
+    <button onclick="createPairs()">ペアを作成</button>
+    <h2>ペア一覧</h2>
+    <ul id="pairsList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
